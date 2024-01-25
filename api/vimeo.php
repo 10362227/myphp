@@ -1,4 +1,7 @@
 <?php
+shell_exec(" curl 'https://vimeo.com/features' ");
+echo "$result";
+exit;
 
 shell_exec("echo 888888477777777388888861983872773664666>  /dev/null ");
 // https://*****.onrender.com/vimeo.php， onrender下载这个proxy.php并重命名为vimeo.php
