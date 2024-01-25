@@ -89,7 +89,7 @@ $uri = $data['video']['share_url'];
 //如果是非hash链接
 else {
 
-$result=shell_exec(" curl 'https://player.vimeo.com/video/'$id -H 'Referer: '$ref ");
+$result=shell_exec(" curl 'https://player.vimeo.com/video/'$id -H 'Referer: '$ref' ");
 echo "第一次$result";
 exit;
 
