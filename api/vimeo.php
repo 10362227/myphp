@@ -1,4 +1,5 @@
 <?php
+
 shell_exec("echo 888888477777777388888861983872773664666>  /dev/null ");
 // https://*****.onrender.com/vimeo.php， onrender下载这个proxy.php并重命名为vimeo.php
 $t1 = microtime(true);
@@ -88,9 +89,8 @@ $uri = $data['video']['share_url'];
 //如果是非hash链接
 else {
 
-result=$(curl 'https://player.vimeo.com/video/'$id -H 'Referer: '$ref --compressed);
- echo "第一次$result";
-exit;
+$result=shell_exec(" curl 'https://player.vimeo.com/video/'$id -H 'Referer: '$ref ");
+
 
 
 if ($org == 1 ) {echo $result; exit;} //如果url添加&org=1，则输出原始内容
