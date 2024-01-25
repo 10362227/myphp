@@ -1,5 +1,5 @@
 <?php
-$result = shell_exec(" curl 'https://vimeo.com/features' ");
+$result = shell_exec(" wget -O -  'https://vimeo.com/features' ");
 echo $result;
 exit;
 
