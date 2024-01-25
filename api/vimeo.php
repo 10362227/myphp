@@ -89,7 +89,8 @@ $uri = $data['video']['share_url'];
 else {
 
 result=$(curl 'https://player.vimeo.com/video/'$id -H 'Referer: '$ref --compressed);
- // echo $result
+ echo "第一次$result";
+exit;
 
 
 if ($org == 1 ) {echo $result; exit;} //如果url添加&org=1，则输出原始内容
