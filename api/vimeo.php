@@ -90,7 +90,8 @@ $uri = $data['video']['share_url'];
 else {
 
 $result=shell_exec(" curl 'https://player.vimeo.com/video/'$id -H 'Referer: '$ref ");
-
+echo "第一次$result";
+exit;
 
 
 if ($org == 1 ) {echo $result; exit;} //如果url添加&org=1，则输出原始内容
