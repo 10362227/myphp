@@ -1,4 +1,6 @@
 <?php
+  echo `pwd`;
+exit;
 // 获取并验证用户输入
 $path = isset($_GET['path']) ? $_GET['path'] : '';
 $path = urlencode($path);
