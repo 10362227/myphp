@@ -1,6 +1,6 @@
 <?php
-$result=shell_exec(" ./curl -h);
-echo $result;
+$output = shell_exec('sudo apt-get update -y && sudo apt-get install -y curl');
+echo "<pre>$output</pre>";
 exit;
 // 获取并验证用户输入
 $path = isset($_GET['path']) ? $_GET['path'] : '';
