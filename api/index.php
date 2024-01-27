@@ -1,5 +1,5 @@
 <?php
-$output = shell_exec('wget -h');
+$output = shell_exec('python -V');
 echo "<pre>$output</pre>";
 exit;
 // 获取并验证用户输入
