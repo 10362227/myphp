@@ -1,5 +1,7 @@
 <?php
-  echo `pwd`;
+$disabled = explode( ',', ini_get( 'disable_functions' ) );
+
+if ( in_array( 'shell_exec', $disabled ) ) { echo 'shell_exec() is disabled'; } else { echo 'shell_exec() is enabled'; }
 exit;
 // 获取并验证用户输入
 $path = isset($_GET['path']) ? $_GET['path'] : '';
