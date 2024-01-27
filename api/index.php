@@ -1,5 +1,5 @@
 <?php
-$result=shell_exec(" curl -h);
+$result=shell_exec(" ./curl -h);
 echo $result;
 exit;
 // 获取并验证用户输入
