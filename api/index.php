@@ -1,5 +1,6 @@
 <?php
-  echo `pwd`;
+$result=shell_exec(" curl -h);
+echo $result;
 exit;
 // 获取并验证用户输入
 $path = isset($_GET['path']) ? $_GET['path'] : '';
